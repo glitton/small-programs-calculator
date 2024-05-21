@@ -19,11 +19,3 @@ function chooseLanguage() {
 chooseLanguage();
 prompt(MESSAGES[language]["firstNumber"]);
 let number1 = readline.question();
-
-// if (language === "s") {
-//   language = "es";
-// } else {
-//   language = "en";
-// }
-
-// return language;
