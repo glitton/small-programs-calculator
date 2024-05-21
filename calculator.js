@@ -9,7 +9,6 @@ function invalidNumber(number) {
   return number.trimStart() === "" || Number.isNaN(Number(number));
 }
 
-//TODO: Add check for invalid language input
 let language = "en";
 function chooseLanguage() {
   prompt(MESSAGES[language]["chooseLanguage"]);
@@ -70,9 +69,15 @@ while (true) {
       break;
   }
 
-  prompt(
-    `The result of ${math} the numbers ${number1} and ${number2} is ${output} `
-  );
+  if (language === "es") {
+    return prompt(
+      `El resultado de los numeros ${number1} y ${number2} es ${output} `
+    );
+  } else {
+    prompt(
+      `The result of ${math} the numbers ${number1} and ${number2} is ${output} `
+    );
+  }
 
   prompt(MESSAGES[language]["anotherCalculation"]);
 
