@@ -1,0 +1,31 @@
+// let color = "yellow";
+// let colors = ["red", "green", "blue"];
+
+// function updateColors(colors) {
+//   colors.push(color);
+// }
+
+// updateColors(colors);
+// console.log(colors);
+
+// let color = "yellow";
+// let colors = ["red", "green", "blue"];
+
+// function updateColors(colors, color) {
+//   colors.push(color);
+// }
+
+// updateColors(colors);
+// console.log(colors);
+
+let color1 = "purple";
+let color2 = "pink";
+let colors = ["red", "green", "blue"];
+
+function updateColors(colors, color) {
+  colors.push(color);
+}
+
+updateColors(colors, color1);
+updateColors(colors, color2);
+console.log(colors);
